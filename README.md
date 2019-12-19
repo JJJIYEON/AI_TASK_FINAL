@@ -45,7 +45,6 @@ UT.show_unique_column()
 UT.plot_3d('kill', 'Burf', 'Totalgold')
 ```
 ![Figure_1](https://user-images.githubusercontent.com/54824935/71181583-c5233580-22b7-11ea-9e96-14b3b0c6dd87.png)
-3D 그래프로 kill, Burf, Totalgold의 
 <hr/>
 
 
@@ -54,12 +53,13 @@ UT.plot_3d('kill', 'Burf', 'Totalgold')
 UT.boxplot('kill','Totalgold')
 ```
 ![Figure_2](https://user-images.githubusercontent.com/54824935/71181605-d53b1500-22b7-11ea-9921-9b834169a69f.png)
+
 <hr/>
 
 
 
 ```
-UT.heatmap(['kill','tower','Totalgold','Burf','winlose']) #상관관계 파악
+UT.heatmap(['kill','tower','Totalgold','Burf','winlose']) 
 ```
 ![Figure_3](https://user-images.githubusercontent.com/54824935/71181651-eab03f00-22b7-11ea-81c0-bad8da032bc9.png)
 heatmap으로 상관관계를 확인합니다.
@@ -77,10 +77,10 @@ UT.run_all(['kill','Burf'],'winlose')
 ![run_all](https://user-images.githubusercontent.com/54824935/71181689-fac81e80-22b7-11ea-896d-c00af7e055c3.PNG)
 
 kill, Burf 컬럼을 이용하여 인식률을 확인합니다.
-- Linear Regression :
-- K-Neighbor Regression :
-- Decition Tree :
-- Random Forest :
+- Linear Regression : 3%
+- K-Neighbor Regression : 0%
+- Decition Tree : 25%
+- Random Forest : 11%
 
 ```
 UT.run_all(['kill','Totalgold','tower','Burf'],'winlose')
@@ -89,10 +89,10 @@ UT.run_all(['kill','Totalgold','tower','Burf'],'winlose')
 
 모든 컬럼을 이용하여 인식률을 확인합니다.
 
-- Linear Regression :
-- K-Neighbor Regression :
-- Decition Tree :
-- Random Forest :
+- Linear Regression : 59%
+- K-Neighbor Regression : 88%
+- Decition Tree : 25%
+- Random Forest : 73%
 kill, Burf 두 개의 컬럼을 이용했을 때 보다 더 높은 인식률을 보여주고 있으나
 
 Decition Tree 는 25%로 동일한 확률을 보여줍니다.
