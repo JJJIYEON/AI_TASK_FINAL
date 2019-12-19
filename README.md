@@ -12,7 +12,6 @@ data 출처 : League of legend 프로게임단 T1소속 Faker선수 최근 전�
 <hr/>
 
 ```from mllib.prediction_util import PredictionUtil```
-
 prediction_util에 있는 모듈을 불러옵니다.
 
 ```UT = PredictionUtil()```
