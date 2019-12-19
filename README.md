@@ -12,7 +12,22 @@ data 출처 : League of legend 프로게임단 T1소속 Faker선수 최근 전�
 <hr/>
 
 ```from mllib.prediction_util import PredictionUtil```
+
 prediction_util에 있는 모듈을 불러옵니다.
 
 ```UT = PredictionUtil()```
+
 객체를 만들었습니다.
+
+```UT.read("data_set.csv")```
+
+data_set.csv 파일을 읽습니다.
+
+```UT.show_unique_column()```
+
+컬럼별 유니크한 값을 표시합니다.
+
+```UT.plot_3d('kill', 'Burf', 'Totalgold')```
+```UT.boxplot('kill','Totalgold')```
+```UT.heatmap(['kill','tower','Totalgold','Burf','winlose']) #상관관계 파악```
+```UT.run_all(['kill','Burf'],'winlose')```
