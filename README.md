@@ -75,12 +75,21 @@ UT.run_all(['kill','Burf'],'winlose')
 ![run_all](https://user-images.githubusercontent.com/54824935/71181689-fac81e80-22b7-11ea-896d-c00af7e055c3.PNG)
 
 kill, Burf 컬럼을 이용하여 인식률을 확인합니다.
-
+-Linear Regression :
+-K-Neighbor Regression :
+-Decition Tree :
+-Random Forest :
 
 ```
 UT.run_all(['kill','Totalgold','tower','Burf'],'winlose')
 ```
 ![run_all2](https://user-images.githubusercontent.com/54824935/71181696-fdc30f00-22b7-11ea-81ff-96c814c3a4ec.PNG)
+
 모든 컬럼을 이용하여 인식률을 확인합니다.
+
+-Linear Regression :
+-K-Neighbor Regression :
+-Decition Tree :
+-Random Forest :
 kill, Burf 두 개의 컬럼을 이용했을 때 보다 더 높은 인식률을 보여주고 있으나
-3번째꺼 이름 뭐냐는 25%로 동일한 확률을 보여줍니다.
+Decition Tree 는 25%로 동일한 확률을 보여줍니다.
