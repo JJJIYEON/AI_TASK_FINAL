@@ -10,11 +10,9 @@ data 출처 : League of legend 프로게임단 T1소속 Faker선수 최근 전�
 - Burf = 용, 바론 버프 획득한 총 횟수
 - winlose = 승패 (승일때는 1, 패일때는 0으로 설정하였습니다.)
 <hr/>
-> 사용한 모듈
-  numpy :
-  matplotlib :
-  sklearn :
-  pandas
 
-> aaa.plot_3d('kill', 'Burf', 'Totalgold')
+#### from mllib.prediction_util import PredictionUtil
+prediction_util에 있는 모듈을 불러옵니다.
 
+#### UT = PredictionUtil()
+객체를 만들었습니다.
