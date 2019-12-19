@@ -75,6 +75,7 @@ Tower는 거의 영향을 끼치지 않습니다.
 UT.run_all(['kill','Burf'],'winlose')
 ```
 ![run_all](https://user-images.githubusercontent.com/54824935/71181689-fac81e80-22b7-11ea-896d-c00af7e055c3.PNG)
+
 kill, Burf을 이용하여 인식률을 확인합니다.
 - Linear Regression : 3%
 - K-Neighbor Regression : 0%
@@ -92,6 +93,7 @@ UT.run_all(['kill','Totalgold','tower','Burf'],'winlose')
 - K-Neighbor Regression : 88%
 - Decition Tree : 25%
 - Random Forest : 73%
+
 kill, Burf 두 개의 컬럼을 이용했을 때 보다 더 높은 인식률을 보여주고 있으나
 
 Decition Tree 는 25%로 동일한 확률을 보여줍니다.
