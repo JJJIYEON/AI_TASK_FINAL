@@ -1,2 +1,1 @@
-# 인공 지능 최종 과제 _ ~ 예측하기입니다.
-classfication_util 사용 하였습니다.
+## 인공 지능 최종 과제_League of legend 상황별 승패 예측하기
