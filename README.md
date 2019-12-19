@@ -11,8 +11,8 @@ data 출처 : League of legend 프로게임단 T1소속 Faker선수 최근 전�
 - winlose = 승패 (승일때는 1, 패일때는 0으로 설정하였습니다.)
 <hr/>
 
-#### from mllib.prediction_util import PredictionUtil
+```from mllib.prediction_util import PredictionUtil```
 prediction_util에 있는 모듈을 불러옵니다.
 
-#### UT = PredictionUtil()
+```UT = PredictionUtil()```
 객체를 만들었습니다.
