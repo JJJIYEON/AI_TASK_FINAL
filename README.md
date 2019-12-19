@@ -45,6 +45,7 @@ UT.show_unique_column()
 UT.plot_3d('kill', 'Burf', 'Totalgold')
 ```
 ![Figure_1](https://user-images.githubusercontent.com/54824935/71181583-c5233580-22b7-11ea-9e96-14b3b0c6dd87.png)
+3D 그래프로 kill, Burf, Totalgold의 
 <hr/>
 
 
@@ -61,6 +62,9 @@ UT.boxplot('kill','Totalgold')
 UT.heatmap(['kill','tower','Totalgold','Burf','winlose']) #상관관계 파악
 ```
 ![Figure_3](https://user-images.githubusercontent.com/54824935/71181651-eab03f00-22b7-11ea-81c0-bad8da032bc9.png)
+heatmap으로 상관관계를 확인합니다.
+Totalgold가 winlose에 가장 많은 영향을 주는 것을 확인할 수 있습니다.
+Tower는 거의 영향을 끼치지 않습니다.
 <hr/>
 
 
@@ -70,7 +74,13 @@ UT.run_all(['kill','Burf'],'winlose')
 ```
 ![run_all](https://user-images.githubusercontent.com/54824935/71181689-fac81e80-22b7-11ea-896d-c00af7e055c3.PNG)
 
+kill, Burf 컬럼을 이용하여 인식률을 확인합니다.
+
+
 ```
 UT.run_all(['kill','Totalgold','tower','Burf'],'winlose')
 ```
 ![run_all2](https://user-images.githubusercontent.com/54824935/71181696-fdc30f00-22b7-11ea-81ff-96c814c3a4ec.PNG)
+모든 컬럼을 이용하여 인식률을 확인합니다.
+kill, Burf 두 개의 컬럼을 이용했을 때 보다 더 높은 인식률을 보여주고 있으나
+3번째꺼 이름 뭐냐는 25%로 동일한 확률을 보여줍니다.
