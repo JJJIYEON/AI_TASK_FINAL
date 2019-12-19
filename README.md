@@ -11,26 +11,41 @@ data 출처 : League of legend 프로게임단 T1소속 Faker선수 최근 전�
 - winlose = 승패 (승일때는 1, 패일때는 0으로 설정하였습니다.)
 <hr/>
 
-```from mllib.prediction_util import PredictionUtil
+```
+from mllib.prediction_util import PredictionUtil
 UT = PredictionUtil()
 ```
 
 prediction_util에 있는 모듈을 불러 온 뒤 객체를 만듭니다..
 
-```UT.read("data_set.csv")```
+```
+UT.read("data_set.csv")
+```
 
 data_set.csv 파일을 읽습니다.
 
-```UT.show_unique_column()```
+```
+UT.show_unique_column()
+```
 
 컬럼별 유니크한 값을 표시합니다.
 
-```UT.plot_3d('kill', 'Burf', 'Totalgold')```
+```
+UT.plot_3d('kill', 'Burf', 'Totalgold')
+```
 
-```UT.boxplot('kill','Totalgold')```
+```
+UT.boxplot('kill','Totalgold')
+```
 
-```UT.heatmap(['kill','tower','Totalgold','Burf','winlose']) #상관관계 파악```
+```
+UT.heatmap(['kill','tower','Totalgold','Burf','winlose']) #상관관계 파악
+```
 
-```UT.run_all(['kill','Burf'],'winlose')```
+```
+UT.run_all(['kill','Burf'],'winlose')
+```
 
-```UT.run_all(['kill','Totalgold','tower','Burf'],'winlose')```
+```
+UT.run_all(['kill','Totalgold','tower','Burf'],'winlose')
+```
