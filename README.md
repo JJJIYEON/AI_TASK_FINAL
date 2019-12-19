@@ -17,6 +17,9 @@ UT = PredictionUtil()
 ```
 
 prediction_util에 있는 모듈을 불러 온 뒤 객체를 만듭니다..
+<hr/>
+
+
 
 ```
 UT.read("data_set.csv")
@@ -24,6 +27,9 @@ UT.read("data_set.csv")
 ![read](https://user-images.githubusercontent.com/54824935/71181483-94430080-22b7-11ea-9287-8d29417557f9.PNG)
 
 data_set.csv 파일을 읽습니다.
+<hr/>
+
+
 
 ```
 UT.show_unique_column()
@@ -31,21 +37,33 @@ UT.show_unique_column()
 ![Unique](https://user-images.githubusercontent.com/54824935/71181540-ade44800-22b7-11ea-9c2e-904ed37c8a04.PNG)
 
 컬럼별 유니크한 값을 표시합니다.
+<hr/>
+
+
 
 ```
 UT.plot_3d('kill', 'Burf', 'Totalgold')
 ```
 ![Figure_1](https://user-images.githubusercontent.com/54824935/71181583-c5233580-22b7-11ea-9e96-14b3b0c6dd87.png)
+<hr/>
+
+
 
 ```
 UT.boxplot('kill','Totalgold')
 ```
 ![Figure_2](https://user-images.githubusercontent.com/54824935/71181605-d53b1500-22b7-11ea-9921-9b834169a69f.png)
+<hr/>
+
+
 
 ```
 UT.heatmap(['kill','tower','Totalgold','Burf','winlose']) #상관관계 파악
 ```
 ![Figure_3](https://user-images.githubusercontent.com/54824935/71181651-eab03f00-22b7-11ea-81c0-bad8da032bc9.png)
+<hr/>
+
+
 
 ```
 UT.run_all(['kill','Burf'],'winlose')
