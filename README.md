@@ -63,7 +63,9 @@ UT.heatmap(['kill','tower','Totalgold','Burf','winlose']) #상관관계 파악
 ```
 ![Figure_3](https://user-images.githubusercontent.com/54824935/71181651-eab03f00-22b7-11ea-81c0-bad8da032bc9.png)
 heatmap으로 상관관계를 확인합니다.
+
 Totalgold가 winlose에 가장 많은 영향을 주는 것을 확인할 수 있습니다.
+
 Tower는 거의 영향을 끼치지 않습니다.
 <hr/>
 
@@ -75,10 +77,10 @@ UT.run_all(['kill','Burf'],'winlose')
 ![run_all](https://user-images.githubusercontent.com/54824935/71181689-fac81e80-22b7-11ea-896d-c00af7e055c3.PNG)
 
 kill, Burf 컬럼을 이용하여 인식률을 확인합니다.
--Linear Regression :
--K-Neighbor Regression :
--Decition Tree :
--Random Forest :
+- Linear Regression :
+- K-Neighbor Regression :
+- Decition Tree :
+- Random Forest :
 
 ```
 UT.run_all(['kill','Totalgold','tower','Burf'],'winlose')
@@ -87,9 +89,10 @@ UT.run_all(['kill','Totalgold','tower','Burf'],'winlose')
 
 모든 컬럼을 이용하여 인식률을 확인합니다.
 
--Linear Regression :
--K-Neighbor Regression :
--Decition Tree :
--Random Forest :
+- Linear Regression :
+- K-Neighbor Regression :
+- Decition Tree :
+- Random Forest :
 kill, Burf 두 개의 컬럼을 이용했을 때 보다 더 높은 인식률을 보여주고 있으나
+
 Decition Tree 는 25%로 동일한 확률을 보여줍니다.
